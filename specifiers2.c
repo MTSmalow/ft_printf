@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifers2.c                                       :+:      :+:    :+:   */
+/*   specifiers2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	specifer_p(va_list *args)
+int	specifier_p(va_list *args)
 {
 	unsigned long	ptr;
 	int				cont;
@@ -32,7 +32,7 @@ int	specifer_p(va_list *args)
 	return (cont);
 }
 
-int	specifer_lhex(va_list *args)
+int	specifier_lhex(va_list *args)
 {
 	int	cont;
 	int	num;
@@ -43,7 +43,7 @@ int	specifer_lhex(va_list *args)
 	return (cont);
 }
 
-int	specifer_uhex(va_list *args)
+int	specifier_uhex(va_list *args)
 {
 	int	cont;
 	int	num;

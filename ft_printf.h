@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 07:44:03 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 11:21:11 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/05 11:29:54 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int			specifier_id(va_list *args);
 int			specifier_c(va_list *args);
 int			specifier_s(va_list *args);
 int			specifier_u(va_list *args);
-int			specifer_p(va_list *args);
-int			specifer_lhex(va_list *args);
-int			specifer_uhex(va_list *args);
+int			specifier_p(va_list *args);
+int			specifier_lhex(va_list *args);
+int			specifier_uhex(va_list *args);
 
 #endif
