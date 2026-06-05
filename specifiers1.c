@@ -6,19 +6,22 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 09:36:27 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 10:44:50 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/05 14:40:37 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	disc_specifier(char arg, va_list *args)
+int	disc_specifier(char arg, va_list *args)
 {
 	int	cont;
 
 	cont = 0;
 	if (arg == '%')
-		return (ft_putchar('%'));
+	{
+		ft_putchar_fd('%', 1);
+		return (1);
+	}
 	else if (arg == 'i' || arg == 'd')
 		cont = specifier_id(args);
 	else if (arg == 'c')

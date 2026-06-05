@@ -6,11 +6,11 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 07:41:10 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 10:51:44 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/05 14:34:56 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_count_digits(int n)
 {

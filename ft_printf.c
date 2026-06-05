@@ -6,13 +6,13 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 06:09:30 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 09:39:33 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/05 14:53:03 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
 	va_list		args;
 	int			i;
@@ -31,7 +31,7 @@ void	ft_printf(const char *format, ...)
 		else
 		{
 			i++;
-			totch += specifier(format[i], &args);
+			totch += disc_specifier(format[i], &args);
 		}
 		i++;
 	}
