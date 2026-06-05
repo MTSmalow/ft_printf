@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 09:36:27 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 09:41:31 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/05 10:44:50 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int	specifier_u(va_list *args)
 	int				cont;
 
 	unum = va_arg(*args, unsigned int);
-	cont = ft_count_unsigned_digits(unum);
+	cont = ft_count_unsigned_digits(unum, 10);
 	ft_putunsigned_fd(unum, 1);
 	return (cont);
 }
