@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 06:09:30 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 14:53:03 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 09:21:37 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_printf(const char *format, ...)
 	int			i;
 	int			totch;
 
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	totch = 0;

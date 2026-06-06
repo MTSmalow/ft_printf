@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 09:36:27 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/06 08:16:48 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 08:57:24 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int	specifier_s(va_list *args)
 	char	*str;
 	int		cont;
 
-	str = (char *)va_arg(*args, char *);
+	str = va_arg(*args, char *);
 	if (str)
 	{
 		cont = ft_strlen(str);
