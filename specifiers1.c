@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 09:36:27 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 14:40:37 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 08:16:48 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,15 @@ int	disc_specifier(char arg, va_list *args)
 
 int	specifier_id(va_list *args)
 {
-	int	cont;
-	int	num;
+	long	nbr;
+	int		cont;
 
-	num = va_arg(*args, int);
-	cont = ft_count_digits(num);
-	ft_putnbr_fd(num, 1);
+	nbr = (long)va_arg(*args, int);
+	if (nbr < 0)
+		cont = ft_count_digits_long(-nbr) + 1;
+	else
+		cont = ft_count_digits_long(nbr);
+	ft_putnbr_fd((int)nbr, 1);
 	return (cont);
 }
 

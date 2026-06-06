@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 07:44:03 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 14:53:29 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 08:16:31 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void		ft_puthex_upper_fd(unsigned int n, int fd);
 int			ft_count_digits(int n);
 int			ft_count_unsigned_digits(unsigned int n, int b);
 int			ft_count_ptr_digits(unsigned long n);
+int			ft_count_digits_long(long nbr);
 int			disc_specifier(char arg, va_list *args);
 int			specifier_id(va_list *args);
 int			specifier_c(va_list *args);

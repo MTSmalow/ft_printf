@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 11:09:20 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/05 11:14:42 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 08:16:02 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,21 @@ int	ft_count_ptr_digits(unsigned long n)
 	while (n > 0)
 	{
 		n = n / 16;
+		cont++;
+	}
+	return (cont);
+}
+
+int	ft_count_digits_long(long nbr)
+{
+	int	cont;
+
+	cont = 0;
+	if (nbr == 0)
+		return (1);
+	while (nbr > 0)
+	{
+		nbr /= 10;
 		cont++;
 	}
 	return (cont);
