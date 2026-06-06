@@ -6,7 +6,7 @@
 /*   By: edmedeir <edmedeir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 10:15:21 by edmedeir          #+#    #+#             */
-/*   Updated: 2026/06/01 16:46:25 by edmedeir         ###   ########.fr       */
+/*   Updated: 2026/06/06 09:42:11 by edmedeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1) - 1;
 	while (end > start && ft_char_in_set(s1[end], set))
 		end--;
-	str = (char *)malloc(sizeof(*s1) * (end - start + 1));
+	str = (char *)malloc(sizeof(*s1) * (end - start + 2));
 	if (!str)
 		return (0);
 	i = 0;
